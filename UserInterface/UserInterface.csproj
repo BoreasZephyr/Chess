@@ -79,9 +79,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChessEngine\GameEngine.csproj">
+    <ProjectReference Include="..\ChessEngine\Chess Engine.csproj">
       <Project>{635959f1-0d94-4766-9182-6ed8a349da98}</Project>
-      <Name>GameEngine</Name>
+      <Name>Chess Engine</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
