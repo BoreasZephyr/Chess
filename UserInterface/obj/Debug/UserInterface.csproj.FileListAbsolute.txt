@@ -1,0 +1,105 @@
+D:\Study\OOP\chess-with-AI-master\UserInterface\bin\Debug\UserInterface.exe.config
+D:\Study\OOP\chess-with-AI-master\UserInterface\bin\Debug\UserInterface.exe
+D:\Study\OOP\chess-with-AI-master\UserInterface\bin\Debug\UserInterface.pdb
+D:\Study\OOP\chess-with-AI-master\UserInterface\bin\Debug\ChessEngine.dll
+D:\Study\OOP\chess-with-AI-master\UserInterface\bin\Debug\ChessEngine.pdb
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csprojAssemblyReference.cache
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.Game.resources
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.Menu.resources
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.PawnPromotion.resources
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.cache
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.exe
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.pdb
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.MusicBoxForm.resources
+D:\Study\OOP\chess-with-AI-master\UserInterface\bin\Debug\Interop.WMPLib.dll
+D:\Study\OOP\chess-with-AI-master\UserInterface\bin\Debug\AxInterop.WMPLib.dll
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\Interop.WMPLib.dll
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\AxInterop.WMPLib.dll
+D:\Study\OOP\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\bin\Debug\ChessEngine.dll
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\bin\Debug\ChessEngine.pdb
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\bin\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.ResolveComReference.cache
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.Game.resources
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.Menu.resources
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.MusicBoxForm.resources
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.PawnPromotion.resources
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\Admin\Documents\Zalo Received Files\chess-with-AI-master\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\Admin\source\repos\Chess Game\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\Admin\source\repos\Chess Game\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\Admin\source\repos\Chess Game\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\Admin\source\repos\Chess Game\UserInterface\bin\Debug\ChessEngine.dll
+C:\Users\Admin\source\repos\Chess Game\UserInterface\bin\Debug\ChessEngine.pdb
+C:\Users\Admin\source\repos\Chess Game\UserInterface\bin\Debug\Interop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess Game\UserInterface\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.ResolveComReference.cache
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.Game.resources
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.Menu.resources
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.MusicBoxForm.resources
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.PawnPromotion.resources
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\Admin\source\repos\Chess Game\UserInterface\obj\Debug\UserInterface.pdb
+H:\VS Projects\Chess Game\UserInterface\bin\Debug\UserInterface.exe.config
+H:\VS Projects\Chess Game\UserInterface\bin\Debug\UserInterface.exe
+H:\VS Projects\Chess Game\UserInterface\bin\Debug\UserInterface.pdb
+H:\VS Projects\Chess Game\UserInterface\bin\Debug\ChessEngine.dll
+H:\VS Projects\Chess Game\UserInterface\bin\Debug\ChessEngine.pdb
+H:\VS Projects\Chess Game\UserInterface\bin\Debug\Interop.WMPLib.dll
+H:\VS Projects\Chess Game\UserInterface\bin\Debug\AxInterop.WMPLib.dll
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.AssemblyReference.cache
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\Interop.WMPLib.dll
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\AxInterop.WMPLib.dll
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.ResolveComReference.cache
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.Game.resources
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.Menu.resources
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.musicBoxForm.resources
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.PawnPromotion.resources
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.cache
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.exe
+H:\VS Projects\Chess Game\UserInterface\obj\Debug\UserInterface.pdb
+C:\Users\Admin\source\repos\Chess\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\Admin\source\repos\Chess\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\Admin\source\repos\Chess\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\Admin\source\repos\Chess\UserInterface\bin\Debug\ChessEngine.dll
+C:\Users\Admin\source\repos\Chess\UserInterface\bin\Debug\ChessEngine.pdb
+C:\Users\Admin\source\repos\Chess\UserInterface\bin\Debug\Interop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess\UserInterface\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\Interop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.csproj.ResolveComReference.cache
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Game.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Menu.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.musicBoxForm.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.PawnPromotion.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.pdb

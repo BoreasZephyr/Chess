@@ -1,0 +1,18 @@
+D:\Study\OOP\chess-with-AI-master\ChessEngine\bin\Debug\ChessEngine.dll
+D:\Study\OOP\chess-with-AI-master\ChessEngine\bin\Debug\ChessEngine.pdb
+D:\Study\OOP\chess-with-AI-master\ChessEngine\obj\Debug\ChessEngine.csprojAssemblyReference.cache
+D:\Study\OOP\chess-with-AI-master\ChessEngine\obj\Debug\ChessEngine.csproj.CoreCompileInputs.cache
+D:\Study\OOP\chess-with-AI-master\ChessEngine\obj\Debug\ChessEngine.dll
+D:\Study\OOP\chess-with-AI-master\ChessEngine\obj\Debug\ChessEngine.pdb
+C:\Users\Admin\source\repos\Chess Game\ChessEngine\bin\Debug\ChessEngine.dll
+C:\Users\Admin\source\repos\Chess Game\ChessEngine\bin\Debug\ChessEngine.pdb
+C:\Users\Admin\source\repos\Chess Game\ChessEngine\obj\Debug\ChessEngine.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\Chess Game\ChessEngine\obj\Debug\ChessEngine.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Chess Game\ChessEngine\obj\Debug\ChessEngine.dll
+C:\Users\Admin\source\repos\Chess Game\ChessEngine\obj\Debug\ChessEngine.pdb
+H:\VS Projects\Chess Game\ChessEngine\bin\Debug\ChessEngine.dll
+H:\VS Projects\Chess Game\ChessEngine\bin\Debug\ChessEngine.pdb
+H:\VS Projects\Chess Game\ChessEngine\obj\Debug\ChessEngine.csproj.AssemblyReference.cache
+H:\VS Projects\Chess Game\ChessEngine\obj\Debug\ChessEngine.csproj.CoreCompileInputs.cache
+H:\VS Projects\Chess Game\ChessEngine\obj\Debug\ChessEngine.dll
+H:\VS Projects\Chess Game\ChessEngine\obj\Debug\ChessEngine.pdb
