@@ -1,7 +1,7 @@
 ﻿
 namespace CHESS_PROJECT
 {
-    partial class Form1
+    partial class Chess
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,17 @@ namespace CHESS_PROJECT
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Chess
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(995, 618);
+            this.Name = "Chess";
+            this.Text = "Chess";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GameEngine;
+
 
 namespace CHESS_PROJECT
 {
-    public partial class Form1 : Form
+    public partial class Chess : Form
     {
-        public Form1()
+        public Chess()
         {
             InitializeComponent();
         }
