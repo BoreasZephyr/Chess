@@ -1,7 +1,7 @@
 ﻿
 namespace UserInterface
 {
-    partial class Chess
+    partial class Game
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Chess
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 668);
-            this.Name = "Chess";
-            this.Text = "Chess";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Game";
         }
 
         #endregion

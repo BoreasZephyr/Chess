@@ -11,9 +11,9 @@ using ChessEngine;
 
 namespace UserInterface
 {
-    public partial class Chess : Form
+    public partial class Menu : Form
     {
-        public Chess()
+        public Menu()
         {
             InitializeComponent();
         }
