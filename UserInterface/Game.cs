@@ -16,6 +16,7 @@ namespace UserInterface
         private BoardUI board;
         private HistoryTable history;
         public int Hard { get; set; }
+        private RemovedPieces removedPieces;
         public AI AI;
         public AI getAI()
         {
@@ -26,11 +27,120 @@ namespace UserInterface
             InitializeComponent();
             this.board = new BoardUI(this);
             this.history = new HistoryTable();
+            
+        }
+        public BoardUI BoardUI
+        {
+            get
+            {
+                return this.board;
+            }
+        }
+        public HistoryTable getHistoryTable()
+        {
+            return this.history;
+        }
+        public RemovedPieces getRemovedPiecesPanel()
+        {
+            return this.removedPieces;
+        }
+        public void disable()
+        {
+            this.board.Enabled = false;
+        }
+        private void undo()
+        {
+            Move move = history.GetMoveHistory().getLatestMove();
+            if (move != null)
+            {
+                this.board.LogicBoard = move.undo();
+                this.board.SoureCell = null;
+                this.board.DesCell = null;
+                this.board.draw();
+                this.history.undoLatestMove();
+            }
         }
     }
     public class RemovedPieces : TableLayoutPanel
     {
         private BoardUI board;
+        private WhiteRemovedPieces whiteRemovedPieces;
+        public WhiteRemovedPieces WhiteRemovedPieces
+        {
+            get
+            {
+                return this.whiteRemovedPieces;
+            }
+        }
+        private BlackRemovedPieces blackRemovedPieces;
+        public BlackRemovedPieces BlackRemovedPieces
+        {
+            get
+            {
+                return this.BlackRemovedPieces;
+            }
+        }
+        public RemovedPieces(BoardUI board):base()
+        {
+            this.whiteRemovedPieces = new WhiteRemovedPieces();
+            this.blackRemovedPieces = new BlackRemovedPieces();
+
+            this.RowCount = 2;
+            this.ColumnCount = 1;
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            this.BackColor = Color.Orange;
+            this.Location = new Point(36, 61);
+            this.Size = new Size(120, 480);
+            this.Controls.Add(this.whiteRemovedPieces);
+            this.Controls.Add(this.blackRemovedPieces);
+            this.board = board;
+        }
+        public void draw(MoveHistory moveHistory)
+        {
+            this.whiteRemovedPieces.Controls.Clear();
+            this.blackRemovedPieces.Controls.Clear();
+            List<Piece> whiteRemovedPiece = new List<Piece>();
+            List<Piece> blackRemovedPiece = new List<Piece>();
+            foreach (Move move in moveHistory.getMoveHistory())
+            {
+                if (move.isAttack())
+                {
+                    Piece attackedPiece = move.getAttackedPiece();
+                    if (attackedPiece.getSide() == Sides.WHITE)
+                    {
+                        whiteRemovedPiece.Add(attackedPiece);
+                    }
+                    else
+                    {
+                        blackRemovedPiece.Add(attackedPiece);
+                    }
+                }
+            }
+            foreach (Piece piece in whiteRemovedPiece)
+            {
+                Panel panel = new Panel();
+                panel.Size = new Size(60, 30);
+                panel.Margin = new Padding(0);
+                string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
+                string type = piece.getPieceType().getPieceName();
+                panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece" + alliance + type + ".PNG");
+                panel.BackgroundImageLayout = ImageLayout.Zoom;
+                whiteRemovedPieces.Controls.Add(panel);
+            }
+            foreach (Piece piece in blackRemovedPiece)
+            {
+                Panel panel = new Panel();
+                panel.Size = new Size(60, 30);
+                panel.Margin = new Padding(0);
+                string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
+                string type = piece.getPieceType().getPieceName();
+                panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece" + alliance + type + ".PNG");
+                panel.BackgroundImageLayout = ImageLayout.Zoom;
+                blackRemovedPieces.Controls.Add(panel);
+            }
+        }
     }
     public class WhiteRemovedPieces : TableLayoutPanel
     {
@@ -136,7 +246,7 @@ namespace UserInterface
                 Piece piece = board.getCell(this.cellID).getPiece();
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
-                string imagePath = Application.StartupPath + "\\Piece" + alliance + type + "PNG";
+                string imagePath = Application.StartupPath + "\\Piece" + alliance + type + ".PNG";
                 this.BackgroundImage = Image.FromFile(@imagePath);
                 this.BackgroundImageLayout = ImageLayout.Center;
             }
