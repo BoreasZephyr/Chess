@@ -142,10 +142,11 @@ namespace UserInterface
                 panel.Margin = new Padding(0);
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
-                panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece" + alliance + type + ".PNG");
+                panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece\\" + alliance + type + ".PNG");
                 panel.BackgroundImageLayout = ImageLayout.Zoom;
                 blackRemovedPieces.Controls.Add(panel);
             }
+            this.Refresh();
         }
     }
     public class WhiteRemovedPieces : TableLayoutPanel
@@ -245,12 +246,43 @@ namespace UserInterface
                 {
                     this.board.DesCell = this.board.LogicBoard.getCell(this.cellID);
                     Move move = MoveFactory.createMove(this.board.LogicBoard, this.board.SoureCell.getCellCoordinate(), this.board.DesCell.getCellCoordinate());
+                    if (move.isPromote())
+                    {
+                        this.choosePiece((PawnPromotionMove)move);
+                    }
+                    if (move != ChessEngine.Move.NULL_MOVE)
+                    {
+                        MoveTransition transition = this.board.LogicBoard.CurrentPlayer.makeMove(move);
+                        //thieu AI
+                        if (move != ChessEngine.Move.NULL_MOVE)
+                        {
+                            transition = this.board.LogicBoard.CurrentPlayer.makeMove(move);
+                            if (transition.getMoveStatus().isDone())
+                            {
+                                this.board.executeMove(transition, move);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        //
+                        this.board.resetClick();
+                    }
                 }
+            }
+            if (e.Button == MouseButtons.Right)
+            {
+                this.board.resetClick();
             }
         }
         public void choosePiece(PawnPromotionMove move)
         {
-            
+            PawnQueening f = new PawnQueening();
+            var res = f.ShowDialog();
+            if (res == DialogResult.OK)
+            {
+                move.setPromotedPiece(f.type);
+            }
         }
         private void setColor()
         {
@@ -303,7 +335,7 @@ namespace UserInterface
         }
         public void hightlight()
         {
-            this.BackColor = Color.Green;
+            this.BackColor = Color.FromArgb(72, 172, 74);
             this.Refresh();
         }
         public void unhightlight()
@@ -315,7 +347,7 @@ namespace UserInterface
         {
             foreach (Move move in this.pieceLegalMoves())
             {
-               
+                this.board.getCellPanel(move.DesCoordinate).hightlight();
             }
         }
         private List<Move> pieceLegalMoves()
@@ -439,6 +471,8 @@ namespace UserInterface
         }
         public void suggestMove()
         {
+            this.resetClick();
+            //Move move = this.GameForm.getAI().getMove(this.logicBoard);
 
         }
         public void resetClick()
@@ -466,10 +500,13 @@ namespace UserInterface
 
             if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) && this.LogicBoard.CurrentPlayer.getAlliance() == Sides.WHITE)
             {
+                //thieu thong bao thang
+                this.GameForm.disable();
             }
             else if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) && this.LogicBoard.CurrentPlayer.getAlliance() == Sides.BLACK)
             {
-
+                //thieu thong bao thang
+                this.GameForm.disable();
             }
             else if (this.LogicBoard.CurrentPlayer.isInCheck())
             {
@@ -484,7 +521,7 @@ namespace UserInterface
         {
             this.Location = new Point(650, 61);
             this.Size = new Size(300, 480);
-            this.BackgroundColor = Color.FromArgb(193, 154, 107);
+            this.BackgroundColor = Color.White;
             this.SendToBack();
             this.Visible = false;
 
