@@ -117,3 +117,4 @@ C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.exe
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.pdb
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.Menu.resources
+C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.Game.resources

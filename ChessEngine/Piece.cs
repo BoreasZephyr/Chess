@@ -10,12 +10,12 @@ namespace ChessEngine
     {
         private string pieceName;
         private int pieceValue;
-        public static PieceType PAWN        = new PieceType("P", 100);
-        public static PieceType ROOK        = new PieceType("R", 525);
-        public static PieceType KNIGHT      = new PieceType("N", 350);
-        public static PieceType BISHOP      = new PieceType("B", 350);
-        public static PieceType QUEEN       = new PieceType("Q", 900);
-        public static PieceType KING        = new PieceType("K", 1000);
+        public static PieceType PAWN        = new PieceType("Pawn", 100);
+        public static PieceType ROOK        = new PieceType("Rook", 525);
+        public static PieceType KNIGHT      = new PieceType("Knight", 350);
+        public static PieceType BISHOP      = new PieceType("Bishop", 350);
+        public static PieceType QUEEN       = new PieceType("Queen", 900);
+        public static PieceType KING        = new PieceType("King", 1000);
 
         public PieceType(string name, int value)
         {

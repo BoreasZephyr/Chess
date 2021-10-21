@@ -27,7 +27,13 @@ namespace UserInterface
             InitializeComponent();
             this.board = new BoardUI(this);
             this.history = new HistoryTable();
+            this.Controls.Add(board);
+            this.Controls.Add(history);
+            this.Controls.Add(removedPieces);
+            this.ControlBox = false;
+            this.Hard = hard;
             
+
         }
         public BoardUI BoardUI
         {
@@ -194,7 +200,7 @@ namespace UserInterface
         private int cellID;
         private BoardUI board;
         private static Color lightColor = Color.White;
-        private static Color darkColor = Color.Black;
+        private static Color darkColor = Color.FromArgb(193, 154, 107);
         private Color preColor;
 
         private Game parentForm { get; set; }
@@ -204,8 +210,47 @@ namespace UserInterface
             this.board = board;
             this.cellID = cellID;
             this.Margin = new Padding(0);
-            this.Size = new Size(100, 100);
+            this.Size = new Size(95, 95);
             this.Name = "panel" + cellID;
+            this.setColor();
+            this.setPieceIcon(board.LogicBoard);
+            this.parentForm = this.board.GameForm;
+            this.MouseClick += new MouseEventHandler(CellPanel_Click);
+        }
+        void CellPanel_Click(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (this.board.SoureCell == null)
+                {
+                    this.board.SoureCell = this.board.LogicBoard.getCell(this.cellID);
+                    this.board.MovePiece = this.board.SoureCell.getPiece();
+                    //ktra cell co quan co khong
+                    if (this.board.MovePiece == null)
+                    {
+                        this.board.SoureCell = null;
+                    }
+                    //ktra click dung quan cua minh khong
+                    else if (this.board.LogicBoard.CurrentPlayer.getAlliance() != this.board.MovePiece.getSide())
+                    {
+                        this.board.SoureCell = null;
+                    }
+                    else
+                    {
+                        this.hightlight();
+                        this.hightlightLegalMoves();
+                    }
+                }
+                else
+                {
+                    this.board.DesCell = this.board.LogicBoard.getCell(this.cellID);
+                    Move move = MoveFactory.createMove(this.board.LogicBoard, this.board.SoureCell.getCellCoordinate(), this.board.DesCell.getCellCoordinate());
+                }
+            }
+        }
+        public void choosePiece(PawnPromotionMove move)
+        {
+            
         }
         private void setColor()
         {
@@ -246,7 +291,7 @@ namespace UserInterface
                 Piece piece = board.getCell(this.cellID).getPiece();
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
-                string imagePath = Application.StartupPath + "\\Piece" + alliance + type + ".PNG";
+                string imagePath = Application.StartupPath + "\\Piece\\" + alliance + type + ".PNG";
                 this.BackgroundImage = Image.FromFile(@imagePath);
                 this.BackgroundImageLayout = ImageLayout.Center;
             }
@@ -356,19 +401,19 @@ namespace UserInterface
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
 
             this.RowCount = 8;
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.RowStyles.Add(new ColumnStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+            this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
 
-            this.Size = new Size(500, 500);
+            this.Size = new Size(760, 760);
             this.TabIndex = 0;
-            this.Location = new Point(10 + 150, 59);
+            this.Location = new Point(10 + 350, 30);
             this.Name = "Board";
             this.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
             this.logicBoard = Board.createStandardBoard();
@@ -394,7 +439,7 @@ namespace UserInterface
         }
         public void suggestMove()
         {
-            
+
         }
         public void resetClick()
         {
@@ -414,6 +459,22 @@ namespace UserInterface
         public void executeMove(MoveTransition transition, Move move)
         {
             this.logicBoard = transition.ToBoard;
+            this.GameForm.getHistoryTable().updateMoveHistory(this.LogicBoard.CurrentPlayer.getOpponent().getAlliance(), move);
+            this.GameForm.getRemovedPiecesPanel().draw(this.GameForm.getHistoryTable().GetMoveHistory());
+            this.draw();
+            this.refreshCell();
+
+            if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) && this.LogicBoard.CurrentPlayer.getAlliance() == Sides.WHITE)
+            {
+            }
+            else if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) && this.LogicBoard.CurrentPlayer.getAlliance() == Sides.BLACK)
+            {
+
+            }
+            else if (this.LogicBoard.CurrentPlayer.isInCheck())
+            {
+                MessageBox.Show("Check", "Check", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
     public class HistoryTable : DataGridView
@@ -423,7 +484,7 @@ namespace UserInterface
         {
             this.Location = new Point(650, 61);
             this.Size = new Size(300, 480);
-            this.BackgroundColor = Color.Transparent;
+            this.BackgroundColor = Color.FromArgb(193, 154, 107);
             this.SendToBack();
             this.Visible = false;
 
