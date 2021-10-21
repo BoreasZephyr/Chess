@@ -411,7 +411,7 @@ namespace UserInterface
             this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
 
-            this.Size = new Size(760, 760);
+            this.Size = new Size(769, 769);
             this.TabIndex = 0;
             this.Location = new Point(10 + 350, 30);
             this.Name = "Board";
