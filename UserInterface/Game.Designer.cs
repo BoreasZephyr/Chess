@@ -35,10 +35,8 @@ namespace UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1822, 1031);
-            this.MinimumSize = new System.Drawing.Size(1840, 1078);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Name = "Game";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
             this.ResumeLayout(false);
 
