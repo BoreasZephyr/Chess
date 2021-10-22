@@ -58,24 +58,5 @@ namespace UserInterface
             hardLabel.BackColor = Color.DimGray;
         }
 
-        private void white_MouseEnter(object sender, EventArgs e)
-        {
-            this.white.BackColor = Color.Gray;
-        }
-
-        private void white_MouseLeave(object sender, EventArgs e)
-        {
-            this.white.BackColor = Color.DimGray;
-        }
-
-        private void black_MouseEnter(object sender, EventArgs e)
-        {
-            this.black.BackColor = Color.Gray;
-        }
-
-        private void black_MouseLeave(object sender, EventArgs e)
-        {
-            this.black.BackColor = Color.DimGray;
-        }
     }
 }
