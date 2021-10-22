@@ -101,7 +101,7 @@ namespace UserInterface
         {
             get
             {
-                return this.BlackRemovedPieces;
+                return this.blackRemovedPieces;
             }
         }
         public RemovedPieces(BoardUI board):base()
@@ -149,7 +149,7 @@ namespace UserInterface
                 panel.Margin = new Padding(0);
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
-                panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece" + alliance + type + ".PNG");
+                panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece\\" + alliance + type + ".PNG");
                 panel.BackgroundImageLayout = ImageLayout.Zoom;
                 whiteRemovedPieces.Controls.Add(panel);
             }
@@ -512,7 +512,7 @@ namespace UserInterface
         {
             this.logicBoard = transition.ToBoard;
             this.GameForm.getHistoryTable().updateMoveHistory(this.LogicBoard.CurrentPlayer.getOpponent().getAlliance(), move);
-            this.GameForm.getRemovedPiecesPanel().draw(this.GameForm.getHistoryTable().GetMoveHistory());
+            //this.GameForm.getRemovedPiecesPanel().draw(this.GameForm.getHistoryTable().GetMoveHistory());
             this.draw();
             this.refreshCell();
 
