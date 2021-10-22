@@ -29,6 +29,7 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AI_Level));
             this.ezLabel = new System.Windows.Forms.Label();
             this.norLabel = new System.Windows.Forms.Label();
             this.hardLabel = new System.Windows.Forms.Label();
@@ -80,7 +81,7 @@ namespace UserInterface
             // hard
             // 
             this.hard.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.hard.Image = global::UserInterface.Properties.Resources.WQueen_png;
+            this.hard.Image = ((System.Drawing.Image)(resources.GetObject("hard.Image")));
             this.hard.Location = new System.Drawing.Point(276, 50);
             this.hard.Name = "hard";
             this.hard.Size = new System.Drawing.Size(96, 215);
@@ -93,7 +94,7 @@ namespace UserInterface
             // easy
             // 
             this.easy.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.easy.Image = global::UserInterface.Properties.Resources.WPawn_png;
+            this.easy.Image = ((System.Drawing.Image)(resources.GetObject("easy.Image")));
             this.easy.Location = new System.Drawing.Point(30, 50);
             this.easy.Name = "easy";
             this.easy.Size = new System.Drawing.Size(91, 215);
@@ -106,7 +107,7 @@ namespace UserInterface
             // normal
             // 
             this.normal.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.normal.Image = global::UserInterface.Properties.Resources.WKnight_png;
+            this.normal.Image = ((System.Drawing.Image)(resources.GetObject("normal.Image")));
             this.normal.Location = new System.Drawing.Point(151, 50);
             this.normal.Name = "normal";
             this.normal.Size = new System.Drawing.Size(96, 215);

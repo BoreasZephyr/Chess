@@ -27,6 +27,7 @@ namespace UserInterface
             InitializeComponent();
             this.board = new BoardUI(this);
             this.history = new HistoryTable();
+            this.removedPieces = new RemovedPieces(board);
             this.Controls.Add(board);
             this.Controls.Add(history);
             this.Controls.Add(removedPieces);
@@ -512,7 +513,7 @@ namespace UserInterface
         {
             this.logicBoard = transition.ToBoard;
             this.GameForm.getHistoryTable().updateMoveHistory(this.LogicBoard.CurrentPlayer.getOpponent().getAlliance(), move);
-            //this.GameForm.getRemovedPiecesPanel().draw(this.GameForm.getHistoryTable().GetMoveHistory());
+            this.GameForm.getRemovedPiecesPanel().draw(this.GameForm.getHistoryTable().GetMoveHistory());
             this.draw();
             this.refreshCell();
 
