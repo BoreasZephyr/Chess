@@ -50,5 +50,21 @@ namespace UserInterface
         {
             Application.Exit();
         }
+
+        private void play2_MouseEnter(object sender, EventArgs e)
+        {
+            this.play2.ForeColor = Color.Aqua;
+        }
+
+        private void play2_MouseLeave(object sender, EventArgs e)
+        {
+            this.play2.ForeColor = Color.White;
+        }
+
+        private void play2_Click(object sender, EventArgs e)
+        {
+            AI_Level level = new AI_Level();
+            level.ShowDialog();
+        }
     }
 }

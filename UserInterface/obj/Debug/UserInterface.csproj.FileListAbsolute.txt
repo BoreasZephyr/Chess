@@ -121,3 +121,4 @@ C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface
 C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Game.resources
 C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Menu.resources
 C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.PawnQueening.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.AI_Level.resources

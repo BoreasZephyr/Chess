@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI_Level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AI_Level.Designer.cs">
+      <DependentUpon>AI_Level.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AI_Level.resx">
+      <DependentUpon>AI_Level.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +135,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\photo-1580541832626-2a7131ee809f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WKnight.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WPawn.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WQueen.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BPawn.png.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

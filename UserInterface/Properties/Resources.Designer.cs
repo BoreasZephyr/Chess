@@ -63,9 +63,49 @@ namespace UserInterface.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BPawn_png {
+            get {
+                object obj = ResourceManager.GetObject("BPawn.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo_1580541832626_2a7131ee809f {
             get {
                 object obj = ResourceManager.GetObject("photo-1580541832626-2a7131ee809f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WKnight_png {
+            get {
+                object obj = ResourceManager.GetObject("WKnight.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WPawn_png {
+            get {
+                object obj = ResourceManager.GetObject("WPawn.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WQueen_png {
+            get {
+                object obj = ResourceManager.GetObject("WQueen.png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
