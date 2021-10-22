@@ -29,19 +29,40 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
+            this.ret = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // ret
+            // 
+            this.ret.AutoSize = true;
+            this.ret.Font = new System.Drawing.Font("04b03", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ret.Location = new System.Drawing.Point(1585, 65);
+            this.ret.Name = "ret";
+            this.ret.Size = new System.Drawing.Size(272, 29);
+            this.ret.TabIndex = 4;
+            this.ret.Text = "RETURN TO MENU";
+            this.ret.Click += new System.EventHandler(this.ret_Click);
+            this.ret.MouseEnter += new System.EventHandler(this.ret_MouseEnter);
+            this.ret.MouseLeave += new System.EventHandler(this.ret_MouseLeave);
             // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.ret);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Game";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label ret;
     }
 }

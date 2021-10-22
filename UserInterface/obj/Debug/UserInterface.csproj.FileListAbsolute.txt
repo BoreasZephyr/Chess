@@ -99,7 +99,6 @@ C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.csproj.C
 C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
 C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.exe
 C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.pdb
-C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Chess.resources
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\bin\Debug\UserInterface.exe.config
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\bin\Debug\UserInterface.exe
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\bin\Debug\UserInterface.pdb
@@ -119,3 +118,6 @@ C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.Menu.resources
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.Game.resources
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.PawnQueening.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Game.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.Menu.resources
+C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.PawnQueening.resources

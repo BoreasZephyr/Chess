@@ -66,6 +66,24 @@ namespace UserInterface
                 this.history.undoLatestMove();
             }
         }
+
+        private void ret_MouseEnter(object sender, EventArgs e)
+        {
+            this.ret.ForeColor = Color.DimGray;
+        }
+
+        private void ret_MouseLeave(object sender, EventArgs e)
+        {
+            this.ret.ForeColor = Color.Black;
+        }
+
+        private void ret_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.ShowDialog();
+            this.Close();
+        }
     }
     public class RemovedPieces : TableLayoutPanel
     {

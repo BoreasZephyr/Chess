@@ -59,5 +59,15 @@ namespace UserInterface.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_1580541832626_2a7131ee809f {
+            get {
+                object obj = ResourceManager.GetObject("photo-1580541832626-2a7131ee809f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

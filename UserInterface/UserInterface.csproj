@@ -124,6 +124,9 @@
   <ItemGroup>
     <Folder Include="bin\Debug\images\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1580541832626-2a7131ee809f.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

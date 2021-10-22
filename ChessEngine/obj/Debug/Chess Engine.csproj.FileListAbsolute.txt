@@ -4,3 +4,9 @@ C:\Users\nguye\OneDrive\Documents\DoAnCNTT\ChessEngine\obj\Debug\Chess Engine.cs
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\ChessEngine\obj\Debug\Chess Engine.csproj.CoreCompileInputs.cache
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\ChessEngine\obj\Debug\ChessEngine.dll
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\ChessEngine\obj\Debug\ChessEngine.pdb
+C:\Users\Admin\source\repos\Chess\ChessEngine\bin\Debug\ChessEngine.dll
+C:\Users\Admin\source\repos\Chess\ChessEngine\bin\Debug\ChessEngine.pdb
+C:\Users\Admin\source\repos\Chess\ChessEngine\obj\Debug\Chess Engine.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Chess\ChessEngine\obj\Debug\Chess Engine.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Chess\ChessEngine\obj\Debug\ChessEngine.dll
+C:\Users\Admin\source\repos\Chess\ChessEngine\obj\Debug\ChessEngine.pdb
