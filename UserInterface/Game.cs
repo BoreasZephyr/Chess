@@ -110,14 +110,14 @@ namespace UserInterface
             this.whiteRemovedPieces = new WhiteRemovedPieces();
             this.blackRemovedPieces = new BlackRemovedPieces();
 
-            this.RowCount = 2;
-            this.ColumnCount = 1;
+            this.RowCount = 1;
+            this.ColumnCount = 2;
             this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.BackColor = Color.Orange;
+            
             this.Location = new Point(36, 61);
-            this.Size = new Size(120, 480);
+            this.Size = new Size(500, 120);
             this.Controls.Add(this.whiteRemovedPieces);
             this.Controls.Add(this.blackRemovedPieces);
             this.board = board;
@@ -185,7 +185,7 @@ namespace UserInterface
             this.ColumnCount = 2;
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
-            this.BackColor = Color.Black;
+            this.BackColor = Color.FromArgb(193, 154, 107) ;
 
             this.Size = new Size(120, 240);
             this.DoubleBuffered = true;
@@ -538,11 +538,11 @@ namespace UserInterface
         private MoveHistory moveHistory;
         public HistoryTable()
         {
-            this.Location = new Point(650, 61);
+            this.Location = new Point(1150, 90);
             this.Size = new Size(300, 480);
             this.BackgroundColor = Color.White;
             this.SendToBack();
-            this.Visible = false;
+            this.Visible = true;
 
             this.Columns.Add(new DataGridViewTextBoxColumn());
             this.Columns.Add(new DataGridViewTextBoxColumn());
@@ -553,7 +553,7 @@ namespace UserInterface
             this.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
             this.DefaultCellStyle.SelectionBackColor = Color.White;
-            this.DefaultCellStyle.SelectionBackColor = Color.Black;
+            this.DefaultCellStyle.SelectionBackColor = Color.FromArgb(193, 154, 107);
             this.AllowUserToAddRows = false;
 
             this.moveHistory = new MoveHistory();
