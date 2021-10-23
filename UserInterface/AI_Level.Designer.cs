@@ -37,6 +37,7 @@ namespace UserInterface
             this.easy = new System.Windows.Forms.PictureBox();
             this.normal = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.easy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.normal)).BeginInit();
@@ -48,7 +49,7 @@ namespace UserInterface
             this.ezLabel.BackColor = System.Drawing.Color.DimGray;
             this.ezLabel.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ezLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ezLabel.Location = new System.Drawing.Point(45, 237);
+            this.ezLabel.Location = new System.Drawing.Point(237, 305);
             this.ezLabel.Name = "ezLabel";
             this.ezLabel.Size = new System.Drawing.Size(55, 19);
             this.ezLabel.TabIndex = 7;
@@ -60,7 +61,7 @@ namespace UserInterface
             this.norLabel.BackColor = System.Drawing.Color.DimGray;
             this.norLabel.Font = new System.Drawing.Font("04b03", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.norLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.norLabel.Location = new System.Drawing.Point(161, 237);
+            this.norLabel.Location = new System.Drawing.Point(351, 307);
             this.norLabel.Name = "norLabel";
             this.norLabel.Size = new System.Drawing.Size(74, 17);
             this.norLabel.TabIndex = 8;
@@ -72,7 +73,7 @@ namespace UserInterface
             this.hardLabel.BackColor = System.Drawing.Color.DimGray;
             this.hardLabel.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hardLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.hardLabel.Location = new System.Drawing.Point(294, 237);
+            this.hardLabel.Location = new System.Drawing.Point(483, 305);
             this.hardLabel.Name = "hardLabel";
             this.hardLabel.Size = new System.Drawing.Size(57, 19);
             this.hardLabel.TabIndex = 9;
@@ -82,9 +83,9 @@ namespace UserInterface
             // 
             this.hard.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.hard.Image = ((System.Drawing.Image)(resources.GetObject("hard.Image")));
-            this.hard.Location = new System.Drawing.Point(276, 50);
+            this.hard.Location = new System.Drawing.Point(465, 98);
             this.hard.Name = "hard";
-            this.hard.Size = new System.Drawing.Size(96, 215);
+            this.hard.Size = new System.Drawing.Size(96, 272);
             this.hard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.hard.TabIndex = 6;
             this.hard.TabStop = false;
@@ -95,9 +96,9 @@ namespace UserInterface
             // 
             this.easy.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.easy.Image = ((System.Drawing.Image)(resources.GetObject("easy.Image")));
-            this.easy.Location = new System.Drawing.Point(30, 50);
+            this.easy.Location = new System.Drawing.Point(219, 98);
             this.easy.Name = "easy";
-            this.easy.Size = new System.Drawing.Size(91, 215);
+            this.easy.Size = new System.Drawing.Size(93, 272);
             this.easy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.easy.TabIndex = 5;
             this.easy.TabStop = false;
@@ -108,9 +109,9 @@ namespace UserInterface
             // 
             this.normal.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.normal.Image = ((System.Drawing.Image)(resources.GetObject("normal.Image")));
-            this.normal.Location = new System.Drawing.Point(151, 50);
+            this.normal.Location = new System.Drawing.Point(340, 98);
             this.normal.Name = "normal";
-            this.normal.Size = new System.Drawing.Size(96, 215);
+            this.normal.Size = new System.Drawing.Size(96, 272);
             this.normal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.normal.TabIndex = 4;
             this.normal.TabStop = false;
@@ -123,18 +124,35 @@ namespace UserInterface
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(26, 18);
+            this.label5.Location = new System.Drawing.Point(215, 66);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(120, 19);
             this.label5.TabIndex = 13;
             this.label5.Text = "DIFFICULTY:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(24, 482);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 19);
+            this.label1.TabIndex = 14;
+            this.label1.Text = " ⇦ RETURN";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
+            this.label1.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
+            // 
             // AI_Level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(399, 319);
+            this.ClientSize = new System.Drawing.Size(783, 520);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.hardLabel);
             this.Controls.Add(this.norLabel);
@@ -142,7 +160,7 @@ namespace UserInterface
             this.Controls.Add(this.hard);
             this.Controls.Add(this.easy);
             this.Controls.Add(this.normal);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AI_Level";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setting";
@@ -162,5 +180,6 @@ namespace UserInterface
         private System.Windows.Forms.Label norLabel;
         private System.Windows.Forms.Label hardLabel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -70,12 +70,12 @@ namespace UserInterface
 
         private void ret_MouseEnter(object sender, EventArgs e)
         {
-            this.ret.ForeColor = Color.DimGray;
+            this.ret.ForeColor = Color.Aqua;
         }
 
         private void ret_MouseLeave(object sender, EventArgs e)
         {
-            this.ret.ForeColor = Color.Black;
+            this.ret.ForeColor = Color.White;
         }
 
         private void ret_Click(object sender, EventArgs e)
@@ -116,8 +116,9 @@ namespace UserInterface
             this.RowStyles.Add(new RowStyle(SizeType.AutoSize));
             this.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             
-            this.Location = new Point(36, 61);
+            this.Location = new Point(60, 27);
             this.Size = new Size(500, 120);
+            this.BackColor = Color.Transparent;
             this.Controls.Add(this.whiteRemovedPieces);
             this.Controls.Add(this.blackRemovedPieces);
             this.board = board;
@@ -148,6 +149,7 @@ namespace UserInterface
                 Panel panel = new Panel();
                 panel.Size = new Size(60, 30);
                 panel.Margin = new Padding(0);
+                panel.BorderStyle = BorderStyle.Fixed3D;
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
                 panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece\\" + alliance + type + ".PNG");
@@ -159,6 +161,7 @@ namespace UserInterface
                 Panel panel = new Panel();
                 panel.Size = new Size(60, 30);
                 panel.Margin = new Padding(0);
+                panel.BorderStyle = BorderStyle.Fixed3D;
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
                 panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece\\" + alliance + type + ".PNG");
@@ -464,7 +467,7 @@ namespace UserInterface
 
             this.Size = new Size(769, 769);
             this.TabIndex = 0;
-            this.Location = new Point(10 + 350, 30);
+            this.Location = new Point(10 + 350, 25);
             this.Name = "Board";
             this.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
             this.logicBoard = Board.createStandardBoard();
@@ -538,7 +541,7 @@ namespace UserInterface
         private MoveHistory moveHistory;
         public HistoryTable()
         {
-            this.Location = new Point(1150, 90);
+            this.Location = new Point(1160, 27);
             this.Size = new Size(300, 480);
             this.BackgroundColor = Color.White;
             this.SendToBack();
@@ -549,8 +552,10 @@ namespace UserInterface
 
             this.Columns[0].HeaderText = "White moves";
             this.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.Columns[0].ReadOnly = true;
             this.Columns[1].HeaderText = "Black moves";
             this.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.Columns[1].ReadOnly = true;
 
             this.DefaultCellStyle.SelectionBackColor = Color.White;
             this.DefaultCellStyle.SelectionBackColor = Color.FromArgb(193, 154, 107);

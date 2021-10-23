@@ -35,8 +35,10 @@ namespace UserInterface
             // ret
             // 
             this.ret.AutoSize = true;
+            this.ret.BackColor = System.Drawing.Color.Transparent;
             this.ret.Font = new System.Drawing.Font("04b03", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ret.Location = new System.Drawing.Point(1585, 65);
+            this.ret.ForeColor = System.Drawing.Color.White;
+            this.ret.Location = new System.Drawing.Point(1592, 751);
             this.ret.Name = "ret";
             this.ret.Size = new System.Drawing.Size(272, 29);
             this.ret.TabIndex = 4;
@@ -49,6 +51,7 @@ namespace UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UserInterface.Properties.Resources.background2;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.ret);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

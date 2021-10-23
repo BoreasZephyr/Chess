@@ -17,11 +17,6 @@ namespace UserInterface
             InitializeComponent();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void easy_MouseEnter(object sender, EventArgs e)
         {
             this.easy.BackColor = Color.Gray;
@@ -58,5 +53,19 @@ namespace UserInterface
             hardLabel.BackColor = Color.DimGray;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label1_MouseEnter(object sender, EventArgs e)
+        {
+            this.label1.ForeColor = Color.Aqua;
+        }
+
+        private void label1_MouseLeave(object sender, EventArgs e)
+        {
+            this.label1.ForeColor = Color.White;
+        }
     }
 }
