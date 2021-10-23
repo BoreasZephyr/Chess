@@ -282,6 +282,9 @@ namespace UserInterface
                             if (transition.getMoveStatus().isDone())
                             {
                                 this.board.executeMove(transition, move);
+                                string soundmoved = Application.StartupPath + "\\Sound\\Move.WAV";
+                                System.Media.SoundPlayer moved = new System.Media.SoundPlayer(soundmoved);
+                                moved.Play();
                             }
                         }
                     }
