@@ -29,6 +29,7 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.play = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Label();
             this.play2 = new System.Windows.Forms.Label();
@@ -91,6 +92,7 @@ namespace UserInterface
             this.Controls.Add(this.play);
             this.Font = new System.Drawing.Font("04b03", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Menu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;

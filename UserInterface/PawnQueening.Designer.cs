@@ -30,16 +30,28 @@ namespace UserInterface
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PawnQueening));
+            this.label1 = new System.Windows.Forms.Label();
             this.Knightbox = new System.Windows.Forms.PictureBox();
             this.Rookbox = new System.Windows.Forms.PictureBox();
             this.Bishopbox = new System.Windows.Forms.PictureBox();
             this.Queenbox = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Knightbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Rookbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bishopbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Queenbox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("04b03", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(32, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "CHOOSE PIECE";
             // 
             // Knightbox
             // 
@@ -109,18 +121,6 @@ namespace UserInterface
             this.Queenbox.MouseEnter += new System.EventHandler(this.Queenbox_MouseEnter);
             this.Queenbox.MouseLeave += new System.EventHandler(this.Queenbox_MouseLeave);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("04b03", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(32, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "CHOOSE PIECE";
-            // 
             // PawnQueening
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -133,6 +133,7 @@ namespace UserInterface
             this.Controls.Add(this.Bishopbox);
             this.Controls.Add(this.Queenbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PawnQueening";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

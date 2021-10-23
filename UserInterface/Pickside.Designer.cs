@@ -143,6 +143,7 @@ namespace UserInterface
             this.Controls.Add(this.Whiteside);
             this.Controls.Add(this.Random);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pickside";
             this.Text = "Pickside";
             ((System.ComponentModel.ISupportInitialize)(this.Blackside)).EndInit();

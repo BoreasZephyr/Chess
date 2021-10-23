@@ -162,6 +162,7 @@ namespace UserInterface
             this.Controls.Add(this.easy);
             this.Controls.Add(this.normal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AI_Level";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Setting";

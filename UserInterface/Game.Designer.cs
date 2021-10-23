@@ -29,6 +29,7 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.btUndo = new System.Windows.Forms.Button();
             this.btHint = new System.Windows.Forms.Button();
             this.btResign = new System.Windows.Forms.Button();
@@ -121,6 +122,7 @@ namespace UserInterface
             this.Controls.Add(this.btHint);
             this.Controls.Add(this.btUndo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
