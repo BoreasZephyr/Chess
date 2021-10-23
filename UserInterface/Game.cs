@@ -67,71 +67,12 @@ namespace UserInterface
                 this.history.undoLatestMove();
             }
         }
-
-        private void ret_MouseEnter(object sender, EventArgs e)
-        {
-            this.ret.ForeColor = Color.Aqua;
-        }
-
-        private void ret_MouseLeave(object sender, EventArgs e)
-        {
-            this.ret.ForeColor = Color.Black;
-        }
-
-        private void ret_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Menu menu = new Menu();
-            menu.ShowDialog();
-            this.Close();
-        }
-
-        private void lbUndo_Click(object sender, EventArgs e)
+        private void btUndo_Click(object sender, EventArgs e)
         {
             this.undo();
         }
 
-        private void lbUndo_MouseEnter(object sender, EventArgs e)
-        {
-            this.lbUndo.ForeColor = Color.Aqua;
-        }
-
-        private void lbUndo_MouseLeave(object sender, EventArgs e)
-        {
-            this.lbUndo.ForeColor = Color.Black;
-        }
-
-        private void lbHint_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbHint_MouseLeave(object sender, EventArgs e)
-        {
-            this.lbHint.ForeColor = Color.Black;
-        }
-
-        private void lbHint_MouseEnter(object sender, EventArgs e)
-        {
-            this.lbHint.ForeColor = Color.Aqua;
-        }
-
-        private void lbResign_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbResign_MouseEnter(object sender, EventArgs e)
-        {
-            this.lbResign.ForeColor = Color.Red;
-        }
-
-        private void lbResign_MouseLeave(object sender, EventArgs e)
-        {
-            this.lbResign.ForeColor = Color.Black;
-        }
-
-        private void lbNewGame_Click(object sender, EventArgs e)
+        private void btNew_Click(object sender, EventArgs e)
         {
             this.board.LogicBoard = Board.createStandardBoard();
             this.board.Enabled = true;
@@ -142,14 +83,12 @@ namespace UserInterface
             this.removedPieces.draw(this.history.GetMoveHistory());
         }
 
-        private void lbNewGame_MouseEnter(object sender, EventArgs e)
+        private void btRet_Click(object sender, EventArgs e)
         {
-            this.lbNewGame.ForeColor = Color.Aqua;
-        }
-
-        private void lbNewGame_MouseLeave(object sender, EventArgs e)
-        {
-            this.lbNewGame.ForeColor = Color.Black;
+            this.Hide();
+            Menu menu = new Menu();
+            menu.ShowDialog();
+            this.Close();
         }
     }
     public class RemovedPieces : TableLayoutPanel

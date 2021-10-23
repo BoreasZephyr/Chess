@@ -29,103 +29,85 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbUndo = new System.Windows.Forms.Label();
-            this.lbHint = new System.Windows.Forms.Label();
-            this.lbResign = new System.Windows.Forms.Label();
-            this.lbNewGame = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ret = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.btUndo = new System.Windows.Forms.Button();
+            this.btHint = new System.Windows.Forms.Button();
+            this.btResign = new System.Windows.Forms.Button();
+            this.btNew = new System.Windows.Forms.Button();
+            this.btRet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbUndo
+            // btUndo
             // 
-            this.lbUndo.AutoSize = true;
-            this.lbUndo.BackColor = System.Drawing.Color.Transparent;
-            this.lbUndo.Font = new System.Drawing.Font("04b03", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUndo.ForeColor = System.Drawing.Color.Black;
-            this.lbUndo.Location = new System.Drawing.Point(35, 37);
-            this.lbUndo.Name = "lbUndo";
-            this.lbUndo.Size = new System.Drawing.Size(93, 29);
-            this.lbUndo.TabIndex = 5;
-            this.lbUndo.Text = "UNDO";
-            this.lbUndo.Click += new System.EventHandler(this.lbUndo_Click);
-            this.lbUndo.MouseEnter += new System.EventHandler(this.lbUndo_MouseEnter);
-            this.lbUndo.MouseLeave += new System.EventHandler(this.lbUndo_MouseLeave);
+            this.btUndo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btUndo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btUndo.Font = new System.Drawing.Font("04b03", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btUndo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btUndo.Location = new System.Drawing.Point(83, 277);
+            this.btUndo.Name = "btUndo";
+            this.btUndo.Size = new System.Drawing.Size(150, 103);
+            this.btUndo.TabIndex = 1;
+            this.btUndo.TabStop = false;
+            this.btUndo.Text = "UNDO";
+            this.btUndo.UseVisualStyleBackColor = false;
+            this.btUndo.Click += new System.EventHandler(this.btUndo_Click);
             // 
-            // lbHint
+            // btHint
             // 
-            this.lbHint.AutoSize = true;
-            this.lbHint.BackColor = System.Drawing.Color.Transparent;
-            this.lbHint.Font = new System.Drawing.Font("04b03", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHint.ForeColor = System.Drawing.Color.Black;
-            this.lbHint.Location = new System.Drawing.Point(35, 171);
-            this.lbHint.Name = "lbHint";
-            this.lbHint.Size = new System.Drawing.Size(85, 29);
-            this.lbHint.TabIndex = 6;
-            this.lbHint.Text = "HINT";
-            this.lbHint.Click += new System.EventHandler(this.lbHint_Click);
-            this.lbHint.MouseEnter += new System.EventHandler(this.lbHint_MouseEnter);
-            this.lbHint.MouseLeave += new System.EventHandler(this.lbHint_MouseLeave);
+            this.btHint.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btHint.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btHint.Font = new System.Drawing.Font("04b03", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHint.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btHint.Location = new System.Drawing.Point(239, 277);
+            this.btHint.Name = "btHint";
+            this.btHint.Size = new System.Drawing.Size(150, 103);
+            this.btHint.TabIndex = 2;
+            this.btHint.TabStop = false;
+            this.btHint.Text = "HINT";
+            this.btHint.UseVisualStyleBackColor = false;
             // 
-            // lbResign
+            // btResign
             // 
-            this.lbResign.AutoSize = true;
-            this.lbResign.BackColor = System.Drawing.Color.Transparent;
-            this.lbResign.Font = new System.Drawing.Font("04b03", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbResign.ForeColor = System.Drawing.Color.Black;
-            this.lbResign.Location = new System.Drawing.Point(35, 300);
-            this.lbResign.Name = "lbResign";
-            this.lbResign.Size = new System.Drawing.Size(125, 29);
-            this.lbResign.TabIndex = 7;
-            this.lbResign.Text = "RESIGN";
-            this.lbResign.Click += new System.EventHandler(this.lbResign_Click);
-            this.lbResign.MouseEnter += new System.EventHandler(this.lbResign_MouseEnter);
-            this.lbResign.MouseLeave += new System.EventHandler(this.lbResign_MouseLeave);
+            this.btResign.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btResign.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btResign.Font = new System.Drawing.Font("04b03", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btResign.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btResign.Location = new System.Drawing.Point(83, 386);
+            this.btResign.Name = "btResign";
+            this.btResign.Size = new System.Drawing.Size(150, 103);
+            this.btResign.TabIndex = 3;
+            this.btResign.TabStop = false;
+            this.btResign.Text = "RESIGN";
+            this.btResign.UseVisualStyleBackColor = false;
             // 
-            // lbNewGame
+            // btNew
             // 
-            this.lbNewGame.AutoSize = true;
-            this.lbNewGame.BackColor = System.Drawing.Color.Transparent;
-            this.lbNewGame.Font = new System.Drawing.Font("04b03", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNewGame.ForeColor = System.Drawing.Color.Black;
-            this.lbNewGame.Location = new System.Drawing.Point(35, 461);
-            this.lbNewGame.Name = "lbNewGame";
-            this.lbNewGame.Size = new System.Drawing.Size(167, 29);
-            this.lbNewGame.TabIndex = 8;
-            this.lbNewGame.Text = "NEW GAME";
-            this.lbNewGame.Click += new System.EventHandler(this.lbNewGame_Click);
-            this.lbNewGame.MouseEnter += new System.EventHandler(this.lbNewGame_MouseEnter);
-            this.lbNewGame.MouseLeave += new System.EventHandler(this.lbNewGame_MouseLeave);
+            this.btNew.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btNew.Font = new System.Drawing.Font("04b03", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNew.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btNew.Location = new System.Drawing.Point(239, 386);
+            this.btNew.Name = "btNew";
+            this.btNew.Size = new System.Drawing.Size(150, 103);
+            this.btNew.TabIndex = 4;
+            this.btNew.TabStop = false;
+            this.btNew.Text = "NEW GAME";
+            this.btNew.UseVisualStyleBackColor = false;
+            this.btNew.Click += new System.EventHandler(this.btNew_Click);
             // 
-            // panel1
+            // btRet
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.ret);
-            this.panel1.Controls.Add(this.lbUndo);
-            this.panel1.Controls.Add(this.lbNewGame);
-            this.panel1.Controls.Add(this.lbHint);
-            this.panel1.Controls.Add(this.lbResign);
-            this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(83, 205);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 699);
-            this.panel1.TabIndex = 9;
-            // 
-            // ret
-            // 
-            this.ret.AutoSize = true;
-            this.ret.BackColor = System.Drawing.Color.Transparent;
-            this.ret.Font = new System.Drawing.Font("04b03", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ret.ForeColor = System.Drawing.Color.Black;
-            this.ret.Location = new System.Drawing.Point(35, 612);
-            this.ret.Name = "ret";
-            this.ret.Size = new System.Drawing.Size(187, 29);
-            this.ret.TabIndex = 9;
-            this.ret.Text = "MAIN MENU";
-            this.ret.Click += new System.EventHandler(this.ret_Click);
-            this.ret.MouseEnter += new System.EventHandler(this.ret_MouseEnter);
-            this.ret.MouseLeave += new System.EventHandler(this.ret_MouseLeave);
+            this.btRet.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btRet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btRet.Font = new System.Drawing.Font("04b03", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btRet.Location = new System.Drawing.Point(83, 495);
+            this.btRet.Name = "btRet";
+            this.btRet.Size = new System.Drawing.Size(306, 95);
+            this.btRet.TabIndex = 5;
+            this.btRet.TabStop = false;
+            this.btRet.Text = "MAIN MENU";
+            this.btRet.UseVisualStyleBackColor = false;
+            this.btRet.Click += new System.EventHandler(this.btRet_Click);
             // 
             // Game
             // 
@@ -133,24 +115,25 @@ namespace UserInterface
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::UserInterface.Properties.Resources.background2;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btRet);
+            this.Controls.Add(this.btNew);
+            this.Controls.Add(this.btResign);
+            this.Controls.Add(this.btHint);
+            this.Controls.Add(this.btUndo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Game";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lbUndo;
-        private System.Windows.Forms.Label lbHint;
-        private System.Windows.Forms.Label lbResign;
-        private System.Windows.Forms.Label lbNewGame;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label ret;
+        private System.Windows.Forms.Button btUndo;
+        private System.Windows.Forms.Button btHint;
+        private System.Windows.Forms.Button btResign;
+        private System.Windows.Forms.Button btNew;
+        private System.Windows.Forms.Button btRet;
     }
 }
