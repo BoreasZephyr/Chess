@@ -85,6 +85,72 @@ namespace UserInterface
             menu.ShowDialog();
             this.Close();
         }
+
+        private void lbUndo_Click(object sender, EventArgs e)
+        {
+            this.undo();
+        }
+
+        private void lbUndo_MouseEnter(object sender, EventArgs e)
+        {
+            this.lbUndo.ForeColor = Color.Aqua;
+        }
+
+        private void lbUndo_MouseLeave(object sender, EventArgs e)
+        {
+            this.lbUndo.ForeColor = Color.White;
+        }
+
+        private void lbHint_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbHint_MouseLeave(object sender, EventArgs e)
+        {
+            this.lbHint.ForeColor = Color.White;
+        }
+
+        private void lbHint_MouseEnter(object sender, EventArgs e)
+        {
+            this.lbHint.ForeColor = Color.Aqua;
+        }
+
+        private void lbResign_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbResign_MouseEnter(object sender, EventArgs e)
+        {
+            this.lbResign.ForeColor = Color.Red;
+        }
+
+        private void lbResign_MouseLeave(object sender, EventArgs e)
+        {
+            this.lbResign.ForeColor = Color.White;
+        }
+
+        private void lbNewGame_Click(object sender, EventArgs e)
+        {
+            this.board.LogicBoard = Board.createStandardBoard();
+            this.board.Enabled = true;
+            this.board.draw();
+            this.history.Rows.Clear();
+            this.history.Rows.Add();
+            this.history.GetMoveHistory().getMoveHistory().Clear();
+            this.removedPieces.draw(this.history.GetMoveHistory());
+        }
+
+        private void lbNewGame_MouseEnter(object sender, EventArgs e)
+        {
+            this.lbNewGame.ForeColor = Color.Aqua;
+        }
+
+        private void lbNewGame_MouseLeave(object sender, EventArgs e)
+        {
+            this.lbNewGame.ForeColor = Color.White;
+        }
     }
     public class RemovedPieces : TableLayoutPanel
     {
