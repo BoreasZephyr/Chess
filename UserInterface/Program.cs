@@ -19,7 +19,7 @@ namespace UserInterface
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Game(3));            
+            Application.Run(new Pickside());            
             
         }
     }

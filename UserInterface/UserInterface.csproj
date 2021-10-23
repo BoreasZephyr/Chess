@@ -68,6 +68,12 @@
     <Compile Include="PawnQueening.Designer.cs">
       <DependentUpon>PawnQueening.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pickside.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pickside.Designer.cs">
+      <DependentUpon>Pickside.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AI_Level.resx">
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PawnQueening.resx">
       <DependentUpon>PawnQueening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pickside.resx">
+      <DependentUpon>Pickside.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

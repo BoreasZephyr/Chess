@@ -42,7 +42,7 @@ namespace UserInterface
             // 
             // Queenbox
             // 
-            this.Queenbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(154)))), ((int)(((byte)(107)))));
+            this.Queenbox.BackColor = System.Drawing.Color.DimGray;
             this.Queenbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Queenbox.BackgroundImage")));
             this.Queenbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Queenbox.ErrorImage = null;
@@ -59,7 +59,7 @@ namespace UserInterface
             // 
             // Bishopbox
             // 
-            this.Bishopbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(154)))), ((int)(((byte)(107)))));
+            this.Bishopbox.BackColor = System.Drawing.Color.DimGray;
             this.Bishopbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bishopbox.BackgroundImage")));
             this.Bishopbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Bishopbox.ErrorImage = null;
@@ -76,7 +76,7 @@ namespace UserInterface
             // 
             // Rookbox
             // 
-            this.Rookbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(154)))), ((int)(((byte)(107)))));
+            this.Rookbox.BackColor = System.Drawing.Color.DimGray;
             this.Rookbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Rookbox.BackgroundImage")));
             this.Rookbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Rookbox.ErrorImage = null;
@@ -93,7 +93,7 @@ namespace UserInterface
             // 
             // Knightbox
             // 
-            this.Knightbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(154)))), ((int)(((byte)(107)))));
+            this.Knightbox.BackColor = System.Drawing.Color.DimGray;
             this.Knightbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Knightbox.BackgroundImage")));
             this.Knightbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Knightbox.ErrorImage = null;
@@ -112,12 +112,15 @@ namespace UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(713, 160);
             this.Controls.Add(this.Knightbox);
             this.Controls.Add(this.Rookbox);
             this.Controls.Add(this.Bishopbox);
             this.Controls.Add(this.Queenbox);
             this.Name = "PawnQueening";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PawnQueening";
             ((System.ComponentModel.ISupportInitialize)(this.Queenbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bishopbox)).EndInit();
