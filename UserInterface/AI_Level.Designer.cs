@@ -33,11 +33,11 @@ namespace UserInterface
             this.ezLabel = new System.Windows.Forms.Label();
             this.norLabel = new System.Windows.Forms.Label();
             this.hardLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.hard = new System.Windows.Forms.PictureBox();
             this.easy = new System.Windows.Forms.PictureBox();
             this.normal = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.hard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.easy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.normal)).BeginInit();
@@ -79,6 +79,33 @@ namespace UserInterface
             this.hardLabel.TabIndex = 9;
             this.hardLabel.Text = "HARD";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Black;
+            this.label5.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(215, 66);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(120, 19);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "DIFFICULTY:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(24, 482);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 19);
+            this.label1.TabIndex = 14;
+            this.label1.Text = " ⇦ RETURN";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
+            this.label1.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
+            // 
             // hard
             // 
             this.hard.BackColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -118,38 +145,12 @@ namespace UserInterface
             this.normal.MouseEnter += new System.EventHandler(this.normal_MouseEnter);
             this.normal.MouseLeave += new System.EventHandler(this.normal_MouseLeave);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(215, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 19);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "DIFFICULTY:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(24, 482);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 19);
-            this.label1.TabIndex = 14;
-            this.label1.Text = " ⇦ RETURN";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            this.label1.MouseEnter += new System.EventHandler(this.label1_MouseEnter);
-            this.label1.MouseLeave += new System.EventHandler(this.label1_MouseLeave);
-            // 
             // AI_Level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(783, 520);
             this.Controls.Add(this.label1);

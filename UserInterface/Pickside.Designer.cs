@@ -31,12 +31,12 @@ namespace UserInterface
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pickside));
             this.label5 = new System.Windows.Forms.Label();
-            this.Blackside = new System.Windows.Forms.PictureBox();
-            this.Whiteside = new System.Windows.Forms.PictureBox();
-            this.Random = new System.Windows.Forms.PictureBox();
             this.blackLabel = new System.Windows.Forms.Label();
             this.randomLabel = new System.Windows.Forms.Label();
             this.whiteLabel = new System.Windows.Forms.Label();
+            this.Blackside = new System.Windows.Forms.PictureBox();
+            this.Whiteside = new System.Windows.Forms.PictureBox();
+            this.Random = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Blackside)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Whiteside)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Random)).BeginInit();
@@ -53,6 +53,42 @@ namespace UserInterface
             this.label5.Size = new System.Drawing.Size(107, 19);
             this.label5.TabIndex = 20;
             this.label5.Text = "PICK SIDE";
+            // 
+            // blackLabel
+            // 
+            this.blackLabel.AutoSize = true;
+            this.blackLabel.BackColor = System.Drawing.Color.DimGray;
+            this.blackLabel.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blackLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.blackLabel.Location = new System.Drawing.Point(332, 249);
+            this.blackLabel.Name = "blackLabel";
+            this.blackLabel.Size = new System.Drawing.Size(65, 19);
+            this.blackLabel.TabIndex = 19;
+            this.blackLabel.Text = "BLACK";
+            // 
+            // randomLabel
+            // 
+            this.randomLabel.AutoSize = true;
+            this.randomLabel.BackColor = System.Drawing.Color.DimGray;
+            this.randomLabel.Font = new System.Drawing.Font("04b03", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.randomLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.randomLabel.Location = new System.Drawing.Point(200, 261);
+            this.randomLabel.Name = "randomLabel";
+            this.randomLabel.Size = new System.Drawing.Size(76, 17);
+            this.randomLabel.TabIndex = 18;
+            this.randomLabel.Text = "RANDOM";
+            // 
+            // whiteLabel
+            // 
+            this.whiteLabel.AutoSize = true;
+            this.whiteLabel.BackColor = System.Drawing.Color.DimGray;
+            this.whiteLabel.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.whiteLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.whiteLabel.Location = new System.Drawing.Point(86, 259);
+            this.whiteLabel.Name = "whiteLabel";
+            this.whiteLabel.Size = new System.Drawing.Size(65, 19);
+            this.whiteLabel.TabIndex = 17;
+            this.whiteLabel.Text = "WHITE";
             // 
             // Blackside
             // 
@@ -93,42 +129,6 @@ namespace UserInterface
             this.Random.MouseEnter += new System.EventHandler(this.Random_MouseEnter);
             this.Random.MouseLeave += new System.EventHandler(this.Random_MouseLeave);
             // 
-            // blackLabel
-            // 
-            this.blackLabel.AutoSize = true;
-            this.blackLabel.BackColor = System.Drawing.Color.DimGray;
-            this.blackLabel.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blackLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.blackLabel.Location = new System.Drawing.Point(332, 249);
-            this.blackLabel.Name = "blackLabel";
-            this.blackLabel.Size = new System.Drawing.Size(65, 19);
-            this.blackLabel.TabIndex = 19;
-            this.blackLabel.Text = "BLACK";
-            // 
-            // randomLabel
-            // 
-            this.randomLabel.AutoSize = true;
-            this.randomLabel.BackColor = System.Drawing.Color.DimGray;
-            this.randomLabel.Font = new System.Drawing.Font("04b03", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.randomLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.randomLabel.Location = new System.Drawing.Point(200, 261);
-            this.randomLabel.Name = "randomLabel";
-            this.randomLabel.Size = new System.Drawing.Size(76, 17);
-            this.randomLabel.TabIndex = 18;
-            this.randomLabel.Text = "RANDOM";
-            // 
-            // whiteLabel
-            // 
-            this.whiteLabel.AutoSize = true;
-            this.whiteLabel.BackColor = System.Drawing.Color.DimGray;
-            this.whiteLabel.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.whiteLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.whiteLabel.Location = new System.Drawing.Point(86, 259);
-            this.whiteLabel.Name = "whiteLabel";
-            this.whiteLabel.Size = new System.Drawing.Size(65, 19);
-            this.whiteLabel.TabIndex = 17;
-            this.whiteLabel.Text = "WHITE";
-            // 
             // Pickside
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -142,6 +142,7 @@ namespace UserInterface
             this.Controls.Add(this.Blackside);
             this.Controls.Add(this.Whiteside);
             this.Controls.Add(this.Random);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pickside";
             this.Text = "Pickside";
             ((System.ComponentModel.ISupportInitialize)(this.Blackside)).EndInit();
