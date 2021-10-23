@@ -75,7 +75,7 @@ namespace UserInterface
 
         private void ret_MouseLeave(object sender, EventArgs e)
         {
-            this.ret.ForeColor = Color.White;
+            this.ret.ForeColor = Color.Black;
         }
 
         private void ret_Click(object sender, EventArgs e)
@@ -98,7 +98,7 @@ namespace UserInterface
 
         private void lbUndo_MouseLeave(object sender, EventArgs e)
         {
-            this.lbUndo.ForeColor = Color.White;
+            this.lbUndo.ForeColor = Color.Black;
         }
 
         private void lbHint_Click(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace UserInterface
 
         private void lbHint_MouseLeave(object sender, EventArgs e)
         {
-            this.lbHint.ForeColor = Color.White;
+            this.lbHint.ForeColor = Color.Black;
         }
 
         private void lbHint_MouseEnter(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace UserInterface
 
         private void lbResign_MouseLeave(object sender, EventArgs e)
         {
-            this.lbResign.ForeColor = Color.White;
+            this.lbResign.ForeColor = Color.Black;
         }
 
         private void lbNewGame_Click(object sender, EventArgs e)
@@ -149,7 +149,7 @@ namespace UserInterface
 
         private void lbNewGame_MouseLeave(object sender, EventArgs e)
         {
-            this.lbNewGame.ForeColor = Color.White;
+            this.lbNewGame.ForeColor = Color.Black;
         }
     }
     public class RemovedPieces : TableLayoutPanel
@@ -215,7 +215,6 @@ namespace UserInterface
                 Panel panel = new Panel();
                 panel.Size = new Size(60, 30);
                 panel.Margin = new Padding(0);
-                panel.BorderStyle = BorderStyle.Fixed3D;
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
                 panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece\\" + alliance + type + ".PNG");
@@ -227,7 +226,6 @@ namespace UserInterface
                 Panel panel = new Panel();
                 panel.Size = new Size(60, 30);
                 panel.Margin = new Padding(0);
-                panel.BorderStyle = BorderStyle.Fixed3D;
                 string alliance = piece.getSide() == Sides.WHITE ? "W" : "B";
                 string type = piece.getPieceType().getPieceName();
                 panel.BackgroundImage = Image.FromFile(Application.StartupPath + "\\Piece\\" + alliance + type + ".PNG");
