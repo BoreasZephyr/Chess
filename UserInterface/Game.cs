@@ -13,7 +13,6 @@ namespace UserInterface
 {
     public partial class Game : Form
     {
-        private int side = 0; //0 la trang, 1 la den
         private BoardUI board;
         private HistoryTable history;
         public int Hard { get; set; }
@@ -36,13 +35,6 @@ namespace UserInterface
             this.Hard = hard;
             
 
-        }
-        public int Side
-        {
-            get
-            {
-                return this.side;
-            }
         }
         public BoardUI BoardUI
         {
@@ -82,7 +74,7 @@ namespace UserInterface
 
         private void btNew_Click(object sender, EventArgs e)
         {
-            this.board.LogicBoard = Board.createStandardBoard(side);
+            this.board.LogicBoard = Board.createStandardBoard();
             this.board.Enabled = true;
             this.board.draw();
             this.history.Rows.Clear();
@@ -239,14 +231,14 @@ namespace UserInterface
 
         private Game parentForm { get; set; }
         public static List<CellPanel> listOfCellCanMove = new List<CellPanel>();
-        public CellPanel(BoardUI board, int cellID, int side)
+        public CellPanel(BoardUI board, int cellID)
         {
             this.board = board;
             this.cellID = cellID;
             this.Margin = new Padding(0);
             this.Size = new Size(95, 95);
             this.Name = "panel" + cellID;
-            this.setColor(side);
+            this.setColor();
             this.setPieceIcon(board.LogicBoard);
             this.parentForm = this.board.GameForm;
             this.MouseClick += new MouseEventHandler(CellPanel_Click);
@@ -320,35 +312,18 @@ namespace UserInterface
                 move.setPromotedPiece(f.type);
             }
         }
-        private void setColor(int side)
+        private void setColor()
         {
-            if (side == 0)
+            if (cellID / 8 == 0 || cellID / 8 == 2 || cellID / 8 == 4 || cellID / 8 == 6)
             {
-                if (cellID / 8 == 0 || cellID / 8 == 2 || cellID / 8 == 4 || cellID / 8 == 6)
-                {
-                    this.BackColor = cellID % 2 == 0 ? lightColor : darkColor;
-                    this.preColor = cellID % 2 == 0 ? lightColor : darkColor;
-                }
-                if (cellID / 8 == 1 || cellID / 8 == 3 || cellID / 8 == 5 || cellID / 8 == 7)
-                {
-                    this.BackColor = cellID % 2 == 0 ? darkColor : lightColor;
-                    this.preColor = cellID % 2 == 0 ? darkColor : lightColor;
-                }
+                this.BackColor = cellID % 2 == 0 ? lightColor : darkColor;
+                this.preColor = cellID % 2 == 0 ? lightColor : darkColor;
             }
-            if (side == 1)
+            if (cellID / 8 == 1 || cellID / 8 == 3 || cellID / 8 == 5 || cellID / 8 == 7)
             {
-                if (cellID / 8 == 0 || cellID / 8 == 2 || cellID / 8 == 4 || cellID / 8 == 6)
-                {
-                    this.BackColor = cellID % 2 == 0 ? darkColor : lightColor;
-                    this.preColor = cellID % 2 == 0 ? darkColor : lightColor;
-                }
-                if (cellID / 8 == 1 || cellID / 8 == 3 || cellID / 8 == 5 || cellID / 8 == 7)
-                {
-                    this.BackColor = cellID % 2 == 0 ? lightColor : darkColor;
-                    this.preColor = cellID % 2 == 0 ? lightColor : darkColor;
-                }
+                this.BackColor = cellID % 2 == 0 ? darkColor : lightColor;
+                this.preColor = cellID % 2 == 0 ? darkColor : lightColor;
             }
-            
         }
         
 
@@ -383,7 +358,7 @@ namespace UserInterface
         }
         public void draw()
         {
-            this.setColor(1);
+            this.setColor();
             this.setPieceIcon(this.board.LogicBoard);
         }
         public void hightlight()
@@ -501,11 +476,11 @@ namespace UserInterface
             this.Location = new Point(10 + 350, 25);
             this.Name = "Board";
             this.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            this.logicBoard = Board.createStandardBoard(1);
+            this.logicBoard = Board.createStandardBoard();
             listOfCells = new List<CellPanel>();
             for (int i = 0; i < 64; i++)
             {
-                CellPanel cell = new CellPanel(this, i,1);
+                CellPanel cell = new CellPanel(this, i);
                 this.Controls.Add(cell, i % 8, i / 8);
                 listOfCells.Add(cell);
             }
