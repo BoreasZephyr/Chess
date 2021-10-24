@@ -168,7 +168,7 @@ namespace ChessEngine
                 builder.setPiece(new Pawn(13, Sides.WHITE, true));
                 builder.setPiece(new Pawn(14, Sides.WHITE, true));
                 builder.setPiece(new Pawn(15, Sides.WHITE, true));
-                builder.setMoveMaker(Sides.BLACK);
+                builder.setMoveMaker(Sides.WHITE);
             }
             return builder.build();
         }        
