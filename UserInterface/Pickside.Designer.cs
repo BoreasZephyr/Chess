@@ -60,7 +60,7 @@ namespace UserInterface
             this.blackLabel.BackColor = System.Drawing.Color.DimGray;
             this.blackLabel.Font = new System.Drawing.Font("04b03", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blackLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.blackLabel.Location = new System.Drawing.Point(332, 249);
+            this.blackLabel.Location = new System.Drawing.Point(336, 259);
             this.blackLabel.Name = "blackLabel";
             this.blackLabel.Size = new System.Drawing.Size(65, 19);
             this.blackLabel.TabIndex = 19;

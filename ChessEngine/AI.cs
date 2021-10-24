@@ -8,7 +8,6 @@ namespace ChessEngine
 {
     public class AI
     {      
-        
 
     }
 }
