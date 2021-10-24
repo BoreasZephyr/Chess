@@ -55,11 +55,13 @@ namespace UserInterface
         private void Whiteside_Click(object sender, EventArgs e)
         {
             side = 0;
+
         }
 
         private void Blackside_Click(object sender, EventArgs e)
         {
             side = 1;
+            
         }
 
         private void Random_Click(object sender, EventArgs e)

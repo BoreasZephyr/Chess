@@ -13,7 +13,7 @@ namespace UserInterface
 {
     public partial class Game : Form
     {
-        int side = 0; //0 la trang, 1 la den
+        private int side = 0; //0 la trang, 1 la den
         private BoardUI board;
         private HistoryTable history;
         public int Hard { get; set; }
@@ -36,6 +36,13 @@ namespace UserInterface
             this.Hard = hard;
             
 
+        }
+        public int Side
+        {
+            get
+            {
+                return this.side;
+            }
         }
         public BoardUI BoardUI
         {
@@ -376,7 +383,7 @@ namespace UserInterface
         }
         public void draw()
         {
-            this.setColor();
+            this.setColor(1);
             this.setPieceIcon(this.board.LogicBoard);
         }
         public void hightlight()
@@ -494,11 +501,11 @@ namespace UserInterface
             this.Location = new Point(10 + 350, 25);
             this.Name = "Board";
             this.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            this.logicBoard = Board.createStandardBoard();
+            this.logicBoard = Board.createStandardBoard(1);
             listOfCells = new List<CellPanel>();
             for (int i = 0; i < 64; i++)
             {
-                CellPanel cell = new CellPanel(this, i);
+                CellPanel cell = new CellPanel(this, i,1);
                 this.Controls.Add(cell, i % 8, i / 8);
                 listOfCells.Add(cell);
             }
