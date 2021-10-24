@@ -100,6 +100,7 @@ namespace UserInterface
             this.Blackside.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Blackside.TabIndex = 16;
             this.Blackside.TabStop = false;
+            this.Blackside.Click += new System.EventHandler(this.Blackside_Click);
             this.Blackside.MouseEnter += new System.EventHandler(this.Blackside_MouseEnter);
             this.Blackside.MouseLeave += new System.EventHandler(this.Blackside_MouseLeave);
             // 
@@ -113,6 +114,7 @@ namespace UserInterface
             this.Whiteside.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Whiteside.TabIndex = 15;
             this.Whiteside.TabStop = false;
+            this.Whiteside.Click += new System.EventHandler(this.Whiteside_Click);
             this.Whiteside.MouseEnter += new System.EventHandler(this.Whiteside_MouseEnter);
             this.Whiteside.MouseLeave += new System.EventHandler(this.Whiteside_MouseLeave);
             // 
@@ -126,6 +128,7 @@ namespace UserInterface
             this.Random.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.Random.TabIndex = 14;
             this.Random.TabStop = false;
+            this.Random.Click += new System.EventHandler(this.Random_Click);
             this.Random.MouseEnter += new System.EventHandler(this.Random_MouseEnter);
             this.Random.MouseLeave += new System.EventHandler(this.Random_MouseLeave);
             // 

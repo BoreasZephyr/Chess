@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChessEngine;
 
 namespace UserInterface
 {
     public partial class Pickside : Form
     {
+        int side=0; //0 la trang, 1 la den
         public Pickside()
         {
             InitializeComponent();
@@ -48,6 +50,22 @@ namespace UserInterface
         {
             this.Blackside.BackColor = Color.DimGray;
             blackLabel.BackColor = Color.DimGray;
+        }
+
+        private void Whiteside_Click(object sender, EventArgs e)
+        {
+            side = 0;
+        }
+
+        private void Blackside_Click(object sender, EventArgs e)
+        {
+            side = 1;
+        }
+
+        private void Random_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            side = rnd.Next(0, 1);
         }
     }
 }

@@ -88,46 +88,88 @@ namespace ChessEngine
             return this.gameBoard[cellPostion];
         }
 
-        public static Board createStandardBoard()
+        public static Board createStandardBoard(int side)
         {
             Builder builder = new Builder();
+            if (side == 0)
+            
+            {
+                //Black Side
+                builder.setPiece(new Rook(0, Sides.BLACK, true));
+                builder.setPiece(new Knight(1, Sides.BLACK, true));
+                builder.setPiece(new Bishop(2, Sides.BLACK, true));
+                builder.setPiece(new Queen(3, Sides.BLACK, true));
+                builder.setPiece(new King(4, Sides.BLACK, true));
+                builder.setPiece(new Bishop(5, Sides.BLACK, true));
+                builder.setPiece(new Knight(6, Sides.BLACK, true));
+                builder.setPiece(new Rook(7, Sides.BLACK, true));
+                builder.setPiece(new Pawn(8, Sides.BLACK, true));
+                builder.setPiece(new Pawn(9, Sides.BLACK, true));
+                builder.setPiece(new Pawn(10, Sides.BLACK, true));
+                builder.setPiece(new Pawn(11, Sides.BLACK, true));
+                builder.setPiece(new Pawn(12, Sides.BLACK, true));
+                builder.setPiece(new Pawn(13, Sides.BLACK, true));
+                builder.setPiece(new Pawn(14, Sides.BLACK, true));
+                builder.setPiece(new Pawn(15, Sides.BLACK, true));
+                //White Side
 
-            //Black Side
-            builder.setPiece(new Rook(0, Sides.BLACK, true));
-            builder.setPiece(new Knight(1,Sides.BLACK, true));
-            builder.setPiece(new Bishop(2, Sides.BLACK, true));
-            builder.setPiece(new Queen(3, Sides.BLACK, true));
-            builder.setPiece(new King(4, Sides.BLACK, true));
-            builder.setPiece(new Bishop(5, Sides.BLACK, true));
-            builder.setPiece(new Knight(6, Sides.BLACK, true));
-            builder.setPiece(new Rook(7, Sides.BLACK, true));
-            builder.setPiece(new Pawn(8, Sides.BLACK, true));
-            builder.setPiece(new Pawn(9, Sides.BLACK, true));
-            builder.setPiece(new Pawn(10, Sides.BLACK, true));
-            builder.setPiece(new Pawn(11, Sides.BLACK, true));
-            builder.setPiece(new Pawn(12, Sides.BLACK, true));
-            builder.setPiece(new Pawn(13, Sides.BLACK, true));
-            builder.setPiece(new Pawn(14, Sides.BLACK, true));
-            builder.setPiece(new Pawn(15, Sides.BLACK, true));
-            //White Side
+                builder.setPiece(new Pawn(48, Sides.WHITE, true));
+                builder.setPiece(new Pawn(49, Sides.WHITE, true));
+                builder.setPiece(new Pawn(50, Sides.WHITE, true));
+                builder.setPiece(new Pawn(51, Sides.WHITE, true));
+                builder.setPiece(new Pawn(52, Sides.WHITE, true));
+                builder.setPiece(new Pawn(53, Sides.WHITE, true));
+                builder.setPiece(new Pawn(54, Sides.WHITE, true));
+                builder.setPiece(new Pawn(55, Sides.WHITE, true));
+                builder.setPiece(new Rook(56, Sides.WHITE, true));
+                builder.setPiece(new Knight(57, Sides.WHITE, true));
+                builder.setPiece(new Bishop(58, Sides.WHITE, true));
+                builder.setPiece(new Queen(59, Sides.WHITE, true));
+                builder.setPiece(new King(60, Sides.WHITE, true));
+                builder.setPiece(new Bishop(61, Sides.WHITE, true));
+                builder.setPiece(new Knight(62, Sides.WHITE, true));
+                builder.setPiece(new Rook(63, Sides.WHITE, true));
+                builder.setMoveMaker(Sides.WHITE);
+            }
+            if (side == 1)
+            {
+                //Black Side
+                builder.setPiece(new Rook(48, Sides.BLACK, true));
+                builder.setPiece(new Knight(49, Sides.BLACK, true));
+                builder.setPiece(new Bishop(50, Sides.BLACK, true));
+                builder.setPiece(new Queen(51, Sides.BLACK, true));
+                builder.setPiece(new King(52, Sides.BLACK, true));
+                builder.setPiece(new Bishop(53, Sides.BLACK, true));
+                builder.setPiece(new Knight(54, Sides.BLACK, true));
+                builder.setPiece(new Rook(55, Sides.BLACK, true));
+                builder.setPiece(new Pawn(56, Sides.BLACK, true));
+                builder.setPiece(new Pawn(57, Sides.BLACK, true));
+                builder.setPiece(new Pawn(58, Sides.BLACK, true));
+                builder.setPiece(new Pawn(59, Sides.BLACK, true));
+                builder.setPiece(new Pawn(60, Sides.BLACK, true));
+                builder.setPiece(new Pawn(61, Sides.BLACK, true));
+                builder.setPiece(new Pawn(62, Sides.BLACK, true));
+                builder.setPiece(new Pawn(63, Sides.BLACK, true));
+                //White Side
 
-            builder.setPiece(new Pawn(48, Sides.WHITE, true));
-            builder.setPiece(new Pawn(49, Sides.WHITE, true));
-            builder.setPiece(new Pawn(50, Sides.WHITE, true));
-            builder.setPiece(new Pawn(51, Sides.WHITE, true));
-            builder.setPiece(new Pawn(52, Sides.WHITE, true));
-            builder.setPiece(new Pawn(53, Sides.WHITE, true));
-            builder.setPiece(new Pawn(54, Sides.WHITE, true));
-            builder.setPiece(new Pawn(55, Sides.WHITE, true));
-            builder.setPiece(new Rook(56, Sides.WHITE, true));
-            builder.setPiece(new Knight(57, Sides.WHITE, true));
-            builder.setPiece(new Bishop(58, Sides.WHITE, true));
-            builder.setPiece(new Queen(59, Sides.WHITE, true));
-            builder.setPiece(new King(60, Sides.WHITE, true));
-            builder.setPiece(new Bishop(61, Sides.WHITE, true));
-            builder.setPiece(new Knight(62, Sides.WHITE, true));
-            builder.setPiece(new Rook(63, Sides.WHITE, true));
-            builder.setMoveMaker(Sides.WHITE);
+                builder.setPiece(new Rook(0, Sides.WHITE, true));
+                builder.setPiece(new Knight(1, Sides.WHITE, true));
+                builder.setPiece(new Bishop(2, Sides.WHITE, true));
+                builder.setPiece(new Queen(3, Sides.WHITE, true));
+                builder.setPiece(new King(4, Sides.WHITE, true));
+                builder.setPiece(new Bishop(5, Sides.WHITE, true));
+                builder.setPiece(new Knight(6, Sides.WHITE, true));
+                builder.setPiece(new Rook(7, Sides.WHITE, true));
+                builder.setPiece(new Pawn(8, Sides.WHITE, true));
+                builder.setPiece(new Pawn(9, Sides.WHITE, true));
+                builder.setPiece(new Pawn(10, Sides.WHITE, true));
+                builder.setPiece(new Pawn(11, Sides.WHITE, true));
+                builder.setPiece(new Pawn(12, Sides.WHITE, true));
+                builder.setPiece(new Pawn(13, Sides.WHITE, true));
+                builder.setPiece(new Pawn(14, Sides.WHITE, true));
+                builder.setPiece(new Pawn(15, Sides.WHITE, true));
+                builder.setMoveMaker(Sides.BLACK);
+            }
             return builder.build();
         }        
         public List<Cell> createGameBoard(Builder builder)

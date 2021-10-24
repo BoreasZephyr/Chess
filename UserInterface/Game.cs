@@ -13,6 +13,7 @@ namespace UserInterface
 {
     public partial class Game : Form
     {
+        int side = 0; //0 la trang, 1 la den
         private BoardUI board;
         private HistoryTable history;
         public int Hard { get; set; }
@@ -74,7 +75,7 @@ namespace UserInterface
 
         private void btNew_Click(object sender, EventArgs e)
         {
-            this.board.LogicBoard = Board.createStandardBoard();
+            this.board.LogicBoard = Board.createStandardBoard(side);
             this.board.Enabled = true;
             this.board.draw();
             this.history.Rows.Clear();
@@ -231,14 +232,14 @@ namespace UserInterface
 
         private Game parentForm { get; set; }
         public static List<CellPanel> listOfCellCanMove = new List<CellPanel>();
-        public CellPanel(BoardUI board, int cellID)
+        public CellPanel(BoardUI board, int cellID, int side)
         {
             this.board = board;
             this.cellID = cellID;
             this.Margin = new Padding(0);
             this.Size = new Size(95, 95);
             this.Name = "panel" + cellID;
-            this.setColor();
+            this.setColor(side);
             this.setPieceIcon(board.LogicBoard);
             this.parentForm = this.board.GameForm;
             this.MouseClick += new MouseEventHandler(CellPanel_Click);
@@ -312,18 +313,35 @@ namespace UserInterface
                 move.setPromotedPiece(f.type);
             }
         }
-        private void setColor()
+        private void setColor(int side)
         {
-            if (cellID / 8 == 0 || cellID / 8 == 2 || cellID / 8 == 4 || cellID / 8 == 6)
+            if (side == 0)
             {
-                this.BackColor = cellID % 2 == 0 ? lightColor : darkColor;
-                this.preColor = cellID % 2 == 0 ? lightColor : darkColor;
+                if (cellID / 8 == 0 || cellID / 8 == 2 || cellID / 8 == 4 || cellID / 8 == 6)
+                {
+                    this.BackColor = cellID % 2 == 0 ? lightColor : darkColor;
+                    this.preColor = cellID % 2 == 0 ? lightColor : darkColor;
+                }
+                if (cellID / 8 == 1 || cellID / 8 == 3 || cellID / 8 == 5 || cellID / 8 == 7)
+                {
+                    this.BackColor = cellID % 2 == 0 ? darkColor : lightColor;
+                    this.preColor = cellID % 2 == 0 ? darkColor : lightColor;
+                }
             }
-            if (cellID / 8 == 1 || cellID / 8 == 3 || cellID / 8 == 5 || cellID / 8 == 7)
+            if (side == 1)
             {
-                this.BackColor = cellID % 2 == 0 ? darkColor : lightColor;
-                this.preColor = cellID % 2 == 0 ? darkColor : lightColor;
+                if (cellID / 8 == 0 || cellID / 8 == 2 || cellID / 8 == 4 || cellID / 8 == 6)
+                {
+                    this.BackColor = cellID % 2 == 0 ? darkColor : lightColor;
+                    this.preColor = cellID % 2 == 0 ? darkColor : lightColor;
+                }
+                if (cellID / 8 == 1 || cellID / 8 == 3 || cellID / 8 == 5 || cellID / 8 == 7)
+                {
+                    this.BackColor = cellID % 2 == 0 ? lightColor : darkColor;
+                    this.preColor = cellID % 2 == 0 ? lightColor : darkColor;
+                }
             }
+            
         }
         
 
