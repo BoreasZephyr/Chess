@@ -124,6 +124,3 @@ C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.PawnQuee
 C:\Users\Admin\source\repos\Chess\UserInterface\obj\Debug\UserInterface.AI_Level.resources
 C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\obj\Debug\UserInterface.AI_Level.resources
 C:\Users\Admin\Source\Repos\Chess\UserInterface\obj\Debug\UserInterface.Pickside.resources
-C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\bin\Debug\MetroFramework.Design.dll
-C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\bin\Debug\MetroFramework.dll
-C:\Users\nguye\OneDrive\Documents\DoAnCNTT\UserInterface\bin\Debug\MetroFramework.Fonts.dll

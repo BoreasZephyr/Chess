@@ -116,6 +116,7 @@ namespace UserInterface
             this.hard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.hard.TabIndex = 6;
             this.hard.TabStop = false;
+            this.hard.Click += new System.EventHandler(this.hard_Click);
             this.hard.MouseEnter += new System.EventHandler(this.hard_MouseEnter);
             this.hard.MouseLeave += new System.EventHandler(this.hard_MouseLeave);
             // 
@@ -129,6 +130,7 @@ namespace UserInterface
             this.easy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.easy.TabIndex = 5;
             this.easy.TabStop = false;
+            this.easy.Click += new System.EventHandler(this.easy_Click);
             this.easy.MouseEnter += new System.EventHandler(this.easy_MouseEnter);
             this.easy.MouseLeave += new System.EventHandler(this.easy_MouseLeave);
             // 
@@ -142,6 +144,7 @@ namespace UserInterface
             this.normal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.normal.TabIndex = 4;
             this.normal.TabStop = false;
+            this.normal.Click += new System.EventHandler(this.normal_Click);
             this.normal.MouseEnter += new System.EventHandler(this.normal_MouseEnter);
             this.normal.MouseLeave += new System.EventHandler(this.normal_MouseLeave);
             // 

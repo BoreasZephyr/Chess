@@ -67,5 +67,29 @@ namespace UserInterface
         {
             this.label1.ForeColor = Color.White;
         }
+
+        private void easy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Game game = new Game(1);
+            game.ShowDialog();
+            this.Close();
+        }
+
+        private void normal_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Game game = new Game(3);
+            game.ShowDialog();
+            this.Close();
+        }
+
+        private void hard_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Game game = new Game(5);
+            game.ShowDialog();
+            this.Close();
+        }
     }
 }
