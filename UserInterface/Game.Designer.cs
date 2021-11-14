@@ -65,6 +65,7 @@ namespace UserInterface
             this.btHint.TabStop = false;
             this.btHint.Text = "HINT";
             this.btHint.UseVisualStyleBackColor = false;
+            this.btHint.Click += new System.EventHandler(this.btHint_Click);
             // 
             // btResign
             // 

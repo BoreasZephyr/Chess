@@ -33,8 +33,12 @@ namespace UserInterface
             this.Controls.Add(removedPieces);
             this.ControlBox = false;
             this.Hard = hard;
-            
+            this.AI = new AI(this.Hard);
+        }
 
+        public AI GetAI()
+        {
+            return this.AI;
         }
         public BoardUI BoardUI
         {
@@ -89,6 +93,11 @@ namespace UserInterface
             Menu menu = new Menu();
             menu.ShowDialog();
             this.Close();
+        }
+
+        private void btHint_Click(object sender, EventArgs e)
+        {
+            this.board.suggestMove();
         }
     }
     public class RemovedPieces : TableLayoutPanel
@@ -278,7 +287,11 @@ namespace UserInterface
                     if (move != ChessEngine.Move.NULL_MOVE)
                     {
                         MoveTransition transition = this.board.LogicBoard.CurrentPlayer.makeMove(move);
-                        //thieu AI
+                        if (transition.getMoveStatus().isDone())
+                        {
+                            this.board.executeMove(transition, move);
+                            move = this.board.GameForm.getAI().getMove(this.board.LogicBoard);
+                        }
                         if (move != ChessEngine.Move.NULL_MOVE)
                         {
                             transition = this.board.LogicBoard.CurrentPlayer.makeMove(move);
@@ -500,7 +513,13 @@ namespace UserInterface
         public void suggestMove()
         {
             this.resetClick();
-            //Move move = this.GameForm.getAI().getMove(this.logicBoard);
+            Move move = this.GameForm.getAI().getMove(this.logicBoard);
+            MoveTransition trans = this.LogicBoard.CurrentPlayer.makeMove(move);
+            if (trans.getMoveStatus().isDone())
+            {
+                this.listOfCells[move.getCurrentCoordinate()].BackColor = Color.FromArgb(127, 255, 212);
+                this.listOfCells[move.DesCoordinate].BackColor = Color.FromArgb(127, 255, 212);
+            }
 
         }
         public void resetClick()
