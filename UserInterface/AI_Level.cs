@@ -55,6 +55,9 @@ namespace UserInterface
 
         private void label1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.ShowDialog();
             this.Close();
         }
 
@@ -87,7 +90,7 @@ namespace UserInterface
         private void hard_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Game game = new Game(5);
+            Game game = new Game(4);
             game.ShowDialog();
             this.Close();
         }

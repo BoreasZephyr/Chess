@@ -63,8 +63,10 @@ namespace UserInterface
 
         private void play2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AI_Level level = new AI_Level();
             level.ShowDialog();
+            this.Close();
         }
     }
 }
