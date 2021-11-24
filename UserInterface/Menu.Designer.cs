@@ -30,25 +30,9 @@ namespace UserInterface
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.play = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Label();
             this.play2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // play
-            // 
-            this.play.AutoSize = true;
-            this.play.BackColor = System.Drawing.Color.Transparent;
-            this.play.Font = new System.Drawing.Font("04b03", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.play.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.play.Location = new System.Drawing.Point(454, 102);
-            this.play.Name = "play";
-            this.play.Size = new System.Drawing.Size(138, 48);
-            this.play.TabIndex = 4;
-            this.play.Text = "PLAY";
-            this.play.Click += new System.EventHandler(this.play_Click);
-            this.play.MouseEnter += new System.EventHandler(this.play_MouseEnter);
-            this.play.MouseLeave += new System.EventHandler(this.play_MouseLeave);
             // 
             // exit
             // 
@@ -71,11 +55,11 @@ namespace UserInterface
             this.play2.BackColor = System.Drawing.Color.Transparent;
             this.play2.Font = new System.Drawing.Font("04b03", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.play2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.play2.Location = new System.Drawing.Point(364, 180);
+            this.play2.Location = new System.Drawing.Point(454, 170);
             this.play2.Name = "play2";
-            this.play2.Size = new System.Drawing.Size(362, 48);
+            this.play2.Size = new System.Drawing.Size(138, 48);
             this.play2.TabIndex = 6;
-            this.play2.Text = "PLAY WITH AI";
+            this.play2.Text = "PLAY";
             this.play2.Click += new System.EventHandler(this.play2_Click);
             this.play2.MouseEnter += new System.EventHandler(this.play2_MouseEnter);
             this.play2.MouseLeave += new System.EventHandler(this.play2_MouseLeave);
@@ -89,7 +73,6 @@ namespace UserInterface
             this.ClientSize = new System.Drawing.Size(1000, 638);
             this.Controls.Add(this.play2);
             this.Controls.Add(this.exit);
-            this.Controls.Add(this.play);
             this.Font = new System.Drawing.Font("04b03", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -104,8 +87,6 @@ namespace UserInterface
         }
 
         #endregion
-
-        private System.Windows.Forms.Label play;
         private System.Windows.Forms.Label exit;
         private System.Windows.Forms.Label play2;
     }

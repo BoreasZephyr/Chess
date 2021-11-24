@@ -17,16 +17,6 @@ namespace UserInterface
         {
             InitializeComponent();
         }
-        private void play_MouseEnter(object sender, EventArgs e)
-        {
-            this.play.ForeColor = Color.Aqua;
-        }
-
-        private void play_MouseLeave(object sender, EventArgs e)
-        {
-            this.play.ForeColor = Color.White;
-        }
-
         private void exit_MouseEnter(object sender, EventArgs e)
         {
             this.exit.ForeColor = Color.Aqua;
