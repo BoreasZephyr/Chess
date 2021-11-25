@@ -547,12 +547,12 @@ namespace UserInterface
 
             if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) && this.LogicBoard.CurrentPlayer.getAlliance() == Sides.WHITE)
             {
-                //thieu thong bao thang
+                MessageBox.Show("The Winner is Black!", "WINNER", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 this.GameForm.disable();
             }
             else if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) && this.LogicBoard.CurrentPlayer.getAlliance() == Sides.BLACK)
             {
-                //thieu thong bao thang
+                MessageBox.Show("The Winner is White!", "WINNNER", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 this.GameForm.disable();
             }
             else if (this.LogicBoard.CurrentPlayer.isInCheck())
