@@ -552,7 +552,7 @@ namespace UserInterface
             }
             else if ((this.LogicBoard.CurrentPlayer.isCheckMate() || this.LogicBoard.CurrentPlayer.isStaleMate()) && this.LogicBoard.CurrentPlayer.getAlliance() == Sides.BLACK)
             {
-                MessageBox.Show("The Winner is White!", "WINNNER", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("The Winner is White!", "WINNER", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 this.GameForm.disable();
             }
             else if (this.LogicBoard.CurrentPlayer.isInCheck())
