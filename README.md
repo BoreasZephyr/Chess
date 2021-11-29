@@ -1,5 +1,5 @@
 # Mô tả tổng quan đồ án - Chess
-**Chess là một ứng dụng từ C# cho phép người dùng có thể chơi cờ vua với máy tính.**
+**Chess là một ứng dụng được code bằng C# winform(.NET Framework) cho phép người dùng có thể chơi cờ vua với máy tính.**
 
 ## Cách thức hoạt động
 ![image](https://user-images.githubusercontent.com/72614237/143837700-12f3f66c-8aaf-4d1e-8779-c64ccc553e22.png)
